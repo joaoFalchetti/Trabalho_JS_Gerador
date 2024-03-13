@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Senhas</h1>
+    <div class="checkboxes">
+      <div class="checkbox">
+        <input type="checkbox" id="lowercase" checked>
+        <label for="lowercase">Letras minúsculas</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="uppercase" checked>
+        <label for="uppercase">Letras maiúsculas</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="numbers" checked>
+        <label for="numbers">Números</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="symbols" checked>
+        <label for="symbols">Símbolos</label>
+      </div>
+    </div>
+    <div class="input">
+      <label for="length">Tamanho da senha:</label>
+      <input type="number" id="length" min ="4" max="30">
+    </div>
+    <div class="button">
+      <button id="generate">Gerar senha</button>
+      <button id="copy">Copiar senha</button>
+    </div>
+    
+    <div class="output" id="output">
+      Sua senha aparecerá aqui
+    </div>
+    
+    <p id="strengthIndicator"></p>
+  </div>
+  
+  <script src="action.js"></script>
+</body>
+</html>
